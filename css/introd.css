@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/*基礎設定*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    line-height: 1.7;
+    color: #432;
+}
+
+#home{
+    background: linear-gradient(45deg,#0b8793,#360033);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+/*導覽列*/
+nav{
+    text-align: center;
+    letter-spacing: 6.75px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.one-menu{
+    border: #ccc 1px solid;
+    display: inline-block;
+    font-size: 13px;
+}
+
+ul.one-menu li{
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+
+ul.one-menu > li:last-child{
+    border-right: none;
+}
+
+ul.one-menu > li{
+    float: left;
+}
+
+ul.one-menu a{
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+ul.one-menu a:hover{
+    background-color: #ef5c28;
+    color: #fff;
+}
+
+ul.one-menu li:hover > a{
+    background-color: #ef5c28;
+    color: #fff;
+}
+
+ul.one-menu ul{
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+}
+
+ul.one-menu ul li{
+    border-bottom: #ccc 1px solid;
+}
+
+ul.one-menu ul li:last-child{
+    border-bottom: none;
+}
+
+ul.one-menu ul ul{
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+
+ul.one-menu ul{
+    left: 99999px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+ul.one-menu li:hover > ul{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+}
+
+ul.one-menu li:hover > ul ul{
+    left: 99999px;
+}
+
+ul.one-menu ul li:hover > ul{
+    left: 90%;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.article{
+    background-color: rgba(200, 230, 240, .5);
+}
+
+.article img{
+    background-size: 50%;
+}
+
+.article p{
+    font-size: 1.5rem;
+}
+
+.article h1{
+    font-size: 3rem;
+}
+
+.images img{
+    border:  5px #fff double;
+}
+
